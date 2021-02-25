@@ -1,0 +1,71 @@
+.container{
+  margin-top: 5px;
+}
+.user {
+  margin-bottom: 15px;
+  border: 2px solid #9ba4ab;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.userInfo{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .userPart{
+    flex-basis: 30%;
+
+    .user__title{
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .user__descr{
+      font-weight: 900;
+      font-size: 18px;
+      color:#2d3b48;
+      margin-bottom: 5px;
+    }
+    .user__data{
+      font-weight: 900;
+      margin-bottom: 5px;
+      padding-left: 14px;
+    }
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+.geo{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+
+  .geo_title{
+    margin-right: 8px;
+    font-weight: 900;
+    font-size: 18px;
+    color:#2d3b48;
+    margin-bottom: 5px;
+
+  }
+}
+
+.link{
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  padding: 5px 10px;
+  border: 2px solid #9ba4ab;
+  background-color: #2c3b49;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color :white;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,0 +1,87 @@
+.wrapper{
+  //display: flex;
+  //justify-content: space-evenly;
+}
+.users{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.users__data{
+display: flex;
+  justify-content: space-evenly;
+}
+.userPart{
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+
+  .user__title{
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color:white;
+  }
+}
+
+.geo{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+
+  .geo_title{
+    margin-right: 8px;
+    font-weight: 900;
+    font-size: 18px;
+
+
+  }
+  label p ,input{
+    color: #2d3b48;
+    margin-left: 20px;
+  }
+
+}
+label{
+  p{
+    color: #2d3b48;
+    margin: 10px;
+  }
+}
+.link {
+  display: flex;
+  & a , button {
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid #9ba4ab;
+    background-color: #2c3b49;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color :white;
+    font-weight: 900;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+}
+
+input{
+  border: 1px solid #9ba4ab;
+  border-radius: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input, select, textarea{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color:#2d3b48
+}

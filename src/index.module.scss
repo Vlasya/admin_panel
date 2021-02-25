@@ -1,0 +1,23 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  height: 0;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
