@@ -68,4 +68,7 @@
   font-weight: 900;
   cursor: pointer;
   text-decoration: none;
+  &.editLink{
+    width: 70px;
+  }
 }

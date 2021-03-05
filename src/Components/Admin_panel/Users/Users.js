@@ -8,21 +8,19 @@ import {FormAddEditUser} from "./FormAddEditUser/FormAddEditUser";
 
 
  class _Users extends React.Component{
-    componentDidMount() {
-        this.props.usersData()
-    }
+     componentDidMount() {
+         this.props.usersData()
+     }
+
 
     render(){
-        console.log('render')
-        const users=this.props.users.users
-        console.log(users)
         return(
             <div className={s.wrapper}>
                 <div className={s.container}>
 
                     <Switch>
-                        <Route path='/users'> <UsersRender users={users}/></Route>
-                        <Route path='/addForm'> <FormAddEditUser/></Route>
+                        <Route  path='/users' component={UsersRender}/>
+                        <Route path='/add-form' component={FormAddEditUser}/>
                     </Switch>
 
                 </div>
@@ -33,8 +31,9 @@ import {FormAddEditUser} from "./FormAddEditUser/FormAddEditUser";
 }
 
 function MapStateToProps(state){
+
      return{
-         users:state.userData
+         users:state.userData.users
      }
 
 }

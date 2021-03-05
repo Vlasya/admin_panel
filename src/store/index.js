@@ -1,10 +1,13 @@
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import { userDataReducer} from "./UsersData";
+import { albumsReducer } from "./AlbumsData";
 
 import thunk from 'redux-thunk'
 
+
 export const rootReducer= combineReducers({
-    userData:userDataReducer
+    userData:userDataReducer,
+    albumData: albumsReducer
 })
 
 export const store= createStore(

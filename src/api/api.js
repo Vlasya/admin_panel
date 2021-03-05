@@ -1,23 +1,28 @@
 import axios from "axios";
 
-const API = 'https://jsonplaceholder.typicode.com';
+const API = 'https://603799685435040017722cf8.mockapi.io';
 
-const API_NEW = 'https://api.npoint.io/d1d3f415c9c863e1e7f9';
-const API_SECOND="https://api.npoint.io/9ca84c35d27caeb102ac"
-
+//get users
 export const getUsers = () => {
-    return axios.get(`${API_SECOND}/users`)
-
+    return axios.get(`${API}/users`)
+}
+//add user
+export const addUser = ({name, surname, email, address, phone, website, company}) => {
+    return axios.post(`${API}/users`, {name, surname, email, address, phone, website, company})
 }
 
+//delete user
+export const deleteUserApi= (id)=>{
 
-export const addUser = (user) => {
+    return axios.delete(`${API}/users/${id}`)
+}
+
+// update user
+
+export const updateUserApi =(user)=>{
     console.log(user)
-    return axios.post(`${API_SECOND}/users`, {user})
+    const {id,name, surname, email, address, phone, website, company}=user
+    // console.log(id,name, surname, email, address, phone, website, company)
+    console.log(id,name, surname, email, address, phone, website, company)
+    return axios.put (`${API}/users/${id}`,{name, surname, email, address, phone, website, company})
 }
-
-
-
-
-
-
