@@ -4,6 +4,10 @@ import s from './Albums.module.scss'
 import {Container} from "@material-ui/core";
 import {AlbumList} from "./AlbumList/AlbumList";
 import {albumFetchData} from "../../../store/AlbumsData";
+import {Switch,Route} from 'react-router-dom'
+import {Album} from "./AlbumList/Album/Album";
+import {selectedAlbumFetch} from "../../../store/AlbumsData/actions";
+
 
 
 
@@ -15,15 +19,67 @@ useEffect(()=>{
     dispatch(albumFetchData())
 },[])
 
-const userList= useSelector(state=>state.userData)
-    console.log(userList)
+    const getPhotos=(albumId)=>{
+    console.log(albumId)
+        dispatch(selectedAlbumFetch(albumId))
+    }
+const userList= useSelector(state=>state.userData.users)
+    // console.log('userList',userList)
 const albumList =useSelector(state=>state.albumData.albums)
+// console.log('albumList',albumList)
+    // userList.
+const [newAlbum,setNewAlbum]=useState([{
+    id:'',
+    userName:'',
+    userId:'',
+    title:''
+
+}])
+useEffect(()=>{
+
+        albumList.forEach(album=>{
+            userList.forEach(user=>{
+                if(album.userId===user.id){
+                    console.log('sdfsdfsdfsdf')
+                    setNewAlbum([
+                        ...newAlbum,{
+                            id:album.id,
+                            userName:user.name,
+                            userId:album.userId,
+                            title:album.title
+                        }])}
+                else{
+                    setNewAlbum([
+                        ...newAlbum,{
+                            id:album.id,
+                            userName:"User not Found",
+                            userId:album.userId,
+                            title:album.title
+                        }])
+                }
+            })
+        })
+
+
+
+
+},[])
 
 
     return (
 
         <Container>
-         <AlbumList albumList={albumList}/>
+
+            <Switch>
+                <Route exact path='/albums'>
+                    <AlbumList albumList={albumList} getPhotos={getPhotos} userList={userList}/>
+                </Route>
+                <Route path='/albums/album'>
+                    <Album/>
+                </Route>
+            </Switch>
+
         </Container>
+
     )
 }
