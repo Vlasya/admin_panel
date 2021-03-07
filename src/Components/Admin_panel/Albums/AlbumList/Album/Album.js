@@ -37,7 +37,6 @@ const useStyles = makeStyles(() => ({
 
 export const Album = () => {
     const album = useSelector(state => state.albumData.selectedAlbum)
-    console.log(album)
 
     const classes = useStyles();
 

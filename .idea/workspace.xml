@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35399c49-fe3f-482e-a245-d6cb5916a9df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/Album/Album.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Admin_panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Admin_panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/Album/Album.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/Album/Album.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/AlbumList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/AlbumList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Users/FormAddEditUser/FormAddEditUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Users/FormAddEditUser/FormAddEditUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/albumsApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/albumsApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/AlbumsData/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/AlbumsData/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/AlbumsData/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/AlbumsData/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/UsersData/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersData/actions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
       <workItem from="1614419986545" duration="14845000" />
       <workItem from="1614792652860" duration="6875000" />
       <workItem from="1614847693679" duration="41649000" />
-      <workItem from="1615029307545" duration="3096000" />
+      <workItem from="1615029307545" duration="3527000" />
     </task>
     <servers />
   </component>

@@ -38,10 +38,7 @@ export class _FormAddEditUser extends React.Component {
 
 
         if (this.props.location.state) {
-            console.log('sdfsdfsdfsdfsdfsdf')
-            console.log(this.props.location.state.user)
             const user = this.props.location.state.user
-            console.log(user)
             this.state = {
                 user: {
                     id: user.id,
@@ -68,7 +65,6 @@ export class _FormAddEditUser extends React.Component {
 
     // clear state after submit
     clearState() {
-        console.log('clear')
         this.setState({
             user: {
                 id: "",

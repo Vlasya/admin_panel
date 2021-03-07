@@ -54,7 +54,6 @@ export const UPDATE_USER_SUCCESS = 'UPDATE_USER_SUCCESS';
 export const UPDATE_USER_FAILED = 'UPDATE_USER_FAILED';
 
 export const updateUser = (user) => dispatch => {
-    console.log(user.name)
     updateUserApi(user)
         .then(() => dispatch(updateUserSuccess()))
         .catch(() =>dispatch(updateUserFailed()))

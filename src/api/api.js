@@ -20,9 +20,6 @@ export const deleteUserApi= (id)=>{
 // update user
 
 export const updateUserApi =(user)=>{
-    console.log(user)
     const {id,name, surname, email, address, phone, website, company}=user
-    // console.log(id,name, surname, email, address, phone, website, company)
-    console.log(id,name, surname, email, address, phone, website, company)
     return axios.put (`${API}/users/${id}`,{name, surname, email, address, phone, website, company})
 }
