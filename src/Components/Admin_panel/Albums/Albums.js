@@ -7,6 +7,7 @@ import {albumFetchData} from "../../../store/AlbumsData";
 import {Switch, Route} from 'react-router-dom'
 import {Album} from "./AlbumList/Album/Album";
 import {selectedAlbumFetch} from "../../../store/AlbumsData/actions";
+import { userDataFetch} from "../../../store/UsersData";
 
 
 export const Albums = () => {
@@ -15,49 +16,15 @@ export const Albums = () => {
 
     useEffect(() => {
         dispatch(albumFetchData())
+        dispatch(userDataFetch())
     }, [])
 
     const getPhotos = (albumId) => {
         dispatch(selectedAlbumFetch(albumId))
     }
-    const userList = useSelector(state => state.userData.users)
+    const userList = useSelector(state => state.userData.usersMap)
 
     const albumList = useSelector(state => state.albumData.albums)
-
-    const [newAlbum, setNewAlbum] = useState([{
-        id: '',
-        userName: '',
-        userId: '',
-        title: ''
-
-    }])
-    useEffect(() => {
-
-        albumList.forEach(album => {
-            userList.forEach(user => {
-                if (album.userId === user.id) {
-                    setNewAlbum([
-                        ...newAlbum, {
-                            id: album.id,
-                            userName: user.name,
-                            userId: album.userId,
-                            title: album.title
-                        }])
-                } else {
-                    setNewAlbum([
-                        ...newAlbum, {
-                            id: album.id,
-                            userName: "User not Found",
-                            userId: album.userId,
-                            title: album.title
-                        }])
-                }
-            })
-        })
-
-
-    }, [])
-
 
     return (
 

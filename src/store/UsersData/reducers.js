@@ -13,6 +13,7 @@ import {
 
 const defaultState = {
     users: [],
+    usersMap:{},
     isFetching: false,
     isAddedSuccess: false,
     isAddFailed: false,
@@ -31,10 +32,15 @@ export const reducer = (state = defaultState, action) => {
                 isFetching: true
             };
         case USER_DATA_FETCH_SUCCESS:
+            const mapU=action.payload.reduce((map,user)=>{
+                map[user.id]=user
+                return map
+            },{})
             return {
                 ...state,
                 isFetching: false,
-                users: action.payload
+                users: action.payload,
+                usersMap:mapU
             }
         case USER_DATA_FETCH_ERROR:
             return {

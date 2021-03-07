@@ -7,8 +7,8 @@ export const getUsers = () => {
     return axios.get(`${API}/users`)
 }
 //add user
-export const addUser = ({name, surname, email, address, phone, website, company}) => {
-    return axios.post(`${API}/users`, {name, surname, email, address, phone, website, company})
+export const addUser = (user) => {
+    return axios.post(`${API}/users`, user)
 }
 
 //delete user

@@ -3,7 +3,7 @@ import s from './Users.module.scss'
 import {UsersRender} from "./UsersRender/UsersRender";
 import {connect} from "react-redux";
 import {userDataFetch} from "../../../store/UsersData";
-import { Switch,Route} from 'react-router-dom'
+import { Switch,Route,Redirect} from 'react-router-dom'
 import {FormAddEditUser} from "./FormAddEditUser/FormAddEditUser";
 
 
@@ -21,6 +21,7 @@ import {FormAddEditUser} from "./FormAddEditUser/FormAddEditUser";
                     <Switch>
                         <Route  path='/users' component={UsersRender}/>
                         <Route path='/add-form' component={FormAddEditUser}/>
+                        <Route path='/' ><Redirect to='/users'/></Route>
                     </Switch>
 
                 </div>
