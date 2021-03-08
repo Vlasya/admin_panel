@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35399c49-fe3f-482e-a245-d6cb5916a9df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/AlbumList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/AlbumList/AlbumList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Albums/Albums.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin_panel/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin_panel/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/UsersData/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersData/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +57,7 @@
       <workItem from="1614792652860" duration="6875000" />
       <workItem from="1614847693679" duration="41649000" />
       <workItem from="1615029307545" duration="3847000" />
-      <workItem from="1615133481215" duration="4694000" />
+      <workItem from="1615133481215" duration="5995000" />
     </task>
     <servers />
   </component>
